@@ -46,15 +46,7 @@ function Home() {
         className={
           styles1.bottomDiv + " " + "w-100 d-flex justify-content-center "
         }
-      >
-        <motion.button
-          onClick={() => navigate("/user-form")}
-          whileTap={{ scale: 0.95 }}
-          className="btn btn-primary"
-        >
-          User Form
-        </motion.button>
-      </div>
+      ></div>
     </div>
   );
 }

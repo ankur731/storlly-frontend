@@ -36,7 +36,7 @@ function Form() {
         console.log(response);
         if (response.status === 201) {
           message.success(response?.data?.msg);
-          navigate("/");
+          navigate("/data");
         }
       })
       .catch((error) => {
@@ -94,13 +94,7 @@ function Form() {
           styles.bottomDiv + " " + "w-100 d-flex justify-content-center "
         }
       >
-        <motion.button
-          onClick={() => navigate("/")}
-          whileTap={{ scale: 0.95 }}
-          className="btn btn-primary"
-        >
-          Home
-        </motion.button>
+       
       </div>
     </div>
   );
