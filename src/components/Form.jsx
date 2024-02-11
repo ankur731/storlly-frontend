@@ -31,7 +31,7 @@ function Form() {
    
 
     axios
-      .post("http://localhost:8000/signup", formData)
+      .post("https://user-record.onrender.com/signup", formData)
       .then((response) => {
         console.log(response);
         if (response.status === 201) {

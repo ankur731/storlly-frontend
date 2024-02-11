@@ -15,7 +15,7 @@ function Home() {
 
   const fetchData = () => {
     axios
-      .get("http://localhost:8000/")
+      .get("https://user-record.onrender.com/")
       .then((response) => {
         console.log(response);
         setData(response.data);
