@@ -1,0 +1,9 @@
+.userCard {
+  background-color: #f5f5f7;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #eeeeec;
+}
+p > span {
+  font-weight: 500;
+}
