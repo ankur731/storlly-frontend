@@ -52,6 +52,7 @@ function Home() {
 }
 
 const UserCard = ({ name, email, phone, dateOfBirth }) => {
+  const dob = new Date(dateOfBirth);
   return (
     <div className="col-12 col-lg-4 col-xl-3 mt-3 mt-lg-4">
       <div className={styles.userCard}>
@@ -65,7 +66,7 @@ const UserCard = ({ name, email, phone, dateOfBirth }) => {
           Email : <span>{email}</span>
         </p>
         <p className="mb-1">
-          DOB : <span>{dateOfBirth}</span>
+          DOB : <span>{dob.toLocaleDateString()}</span>
         </p>
       </div>
     </div>
